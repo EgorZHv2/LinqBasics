@@ -14,12 +14,15 @@ namespace Linq2
             Power = power;
             Owner = person;
         }
+        public Car()
+        {
+
+        }
         public Car(string name,int power,string firstname,string lastname)
         {
             Name = name;
             Power = power;
-            Owner.Firstname = firstname;
-            Owner.Lastname = lastname;
+            Owner = new Person(firstname, lastname);
         }
         private string name;
         public string Name
@@ -39,6 +42,5 @@ namespace Linq2
             get { return owner; }
             set { owner = value; }
         }
-
     }
 }
