@@ -37,7 +37,7 @@ namespace Linq
             
             List<Person> dimons2 = people.Where(m => m.Firstname == "Дима").ToList(); //Создание нового списка который запечатляет основной список в один момент времени - не изменяется при изменении основного списка
 
-            Console.WriteLine("\nВторой список полученный   LINQ:");
+            Console.WriteLine("\nВторой список полученный  через LINQ:");
             foreach (Person dimons in dimons2)
             {
                 Console.WriteLine(dimons.Firstname + " " + dimons.Lastname);
